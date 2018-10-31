@@ -664,7 +664,7 @@ void BitcoinGUI::createTrayIcon(const NetworkStyle *networkStyle)
 {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    trayIcon->setToolTip(tr("SolarCoin Wallet"));
+    trayIcon->setToolTip(tr("Safe Seafood B1.0"));
     trayIcon->setIcon(networkStyle->getTrayAndWindowIcon());
     trayIcon->hide();
 #endif

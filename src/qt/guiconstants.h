@@ -39,10 +39,10 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 #define COLOR_BLACK QColor(0, 0, 0)
 
 /* Custom colors / fonts */
-#define STR_COLOR QString("#cc6600")
+#define STR_COLOR QString("#a80202")
 #define STR_COLOR_LT QString("#ff9614")
 #define STR_COLOR_HOVER QString("#ffd114")
-#define STR_COLOR_TTBG QString("#cc6600")
+#define STR_COLOR_TTBG QString("#a80202")
 #define STR_FONT_COLOR QString("#444748")
 
 #ifdef Q_OS_MAC
