@@ -56,9 +56,9 @@ public:
      */
     enum Unit
     {
-        SLR,
-        mSLR,
-        uSLR
+        SSF,
+        mSSF,
+        uSSF
     };
 
     enum SeparatorStyle

@@ -141,15 +141,15 @@ IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE    = 0x0040
 IMAGE_DLL_CHARACTERISTICS_NX_COMPAT       = 0x0100
 
 def check_PE_DYNAMIC_BASE(executable):
-    '''PIE: DllCharacteristics bit 0x40 signifies dynamicbase (ASLR)'''
+    '''PIE: DllCharacteristics bit 0x40 signifies dynamicbase (ASSF)'''
     (arch,bits) = get_PE_dll_characteristics(executable)
     reqbits = IMAGE_DLL_CHARACTERISTICS_DYNAMIC_BASE
     return (bits & reqbits) == reqbits
 
 # On 64 bit, must support high-entropy 64-bit address space layout randomization in addition to DYNAMIC_BASE
-# to have secure ASLR.
+# to have secure ASSF.
 def check_PE_HIGH_ENTROPY_VA(executable):
-    '''PIE: DllCharacteristics bit 0x20 signifies high-entropy ASLR'''
+    '''PIE: DllCharacteristics bit 0x20 signifies high-entropy ASSF'''
     (arch,bits) = get_PE_dll_characteristics(executable)
     if arch == 'i386:x86-64': 
         reqbits = IMAGE_DLL_CHARACTERISTICS_HIGH_ENTROPY_VA

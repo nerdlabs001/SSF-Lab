@@ -17,9 +17,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(SLR);
-    unitlist.append(mSLR);
-    unitlist.append(uSLR);
+    unitlist.append(SSF);
+    unitlist.append(mSSF);
+    unitlist.append(uSSF);
     return unitlist;
 }
 
@@ -27,9 +27,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case SLR:
-    case mSLR:
-    case uSLR:
+    case SSF:
+    case mSSF:
+    case uSSF:
         return true;
     default:
         return false;
@@ -40,9 +40,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case SLR: return QString("SLR");
-    case mSLR: return QString("mSLR");
-    case uSLR: return QString::fromUtf8("μSLR");
+    case SSF: return QString("SSF");
+    case mSSF: return QString("mSSF");
+    case uSSF: return QString::fromUtf8("μSSF");
     default: return QString("???");
     }
 }
@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case SLR: return QString("SolarCoins");
-    case mSLR: return QString("Milli-SolarCoins (1 / 1" THIN_SP_UTF8 "000)");
-    case uSLR: return QString("Micro-SolarCoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SSF: return QString("SolarCoins");
+    case mSSF: return QString("Milli-SolarCoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uSSF: return QString("Micro-SolarCoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -62,9 +62,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case SLR:  return 100000000;
-    case mSLR: return 100000;
-    case uSLR: return 100;
+    case SSF:  return 100000000;
+    case mSSF: return 100000;
+    case uSSF: return 100;
     default:   return 100000000;
     }
 }
@@ -73,9 +73,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case SLR: return 8;
-    case mSLR: return 5;
-    case uSLR: return 2;
+    case SSF: return 8;
+    case mSSF: return 5;
+    case uSSF: return 2;
     default: return 0;
     }
 }

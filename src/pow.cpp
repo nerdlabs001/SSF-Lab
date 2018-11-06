@@ -52,7 +52,7 @@ double GetCurrentInterestRate(CBlockIndex* pindexPrev, const Consensus::Params& 
 // Get the current coin supply / COIN
 int64_t GetCurrentCoinSupply(CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
-    // removed addition of 1.35 SLR / block after 835000 + 1000
+    // removed addition of 1.35 SSF / block after 835000 + 1000
     if (pindexPrev->nHeight > params.TWO_PERCENT_INT_HEIGHT)
         if (pindexPrev->nHeight >= params.FORK_HEIGHT_2)
             // SolarCoin 3.14.2 fix: pindexPrev->nMoneySupply is an int64_t that has overflowed and is now negative.

@@ -6,7 +6,7 @@ https://solarcoin.org
 What is SolarCoin?
 ----------------
 
-SolarCoin [SLR] is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
+SolarCoin [SSF] is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
 
 - 140 Character Transaction Messaging
 - 100 coins per block initial rewards, halving every 525,600 (once a year) blocks.
@@ -22,7 +22,7 @@ SolarCoin [SLR] is a lite version of Bitcoin using scrypt as a proof-of-work alg
 
 Harforks: 
 Block 310,000 (Implemented block reduction & Patched KGW retargeting algorithm)
-Block xxx,xxx (reduction of POW from 100 SLR/min to 1 SLR/min)
+Block xxx,xxx (reduction of POW from 100 SSF/min to 1 SSF/min)
 Block xxx,xxx (Change of consensys from POW to POST {proof of stake time} protocol.)
 Block xxx,xxx (Change of min TX fee to better support future IOT efforts)
 

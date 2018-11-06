@@ -13,7 +13,7 @@
  * for both solarcoind and solarcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("SolarCoin");
+const std::string CLIENT_NAME("SafeSea");
 
 /**
  * Client version number

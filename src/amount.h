@@ -22,7 +22,7 @@ extern const std::string CURRENCY_UNIT;
 /** No amount larger than this (in satoshi) is valid.
  *
  * Note that this constant is *not* the total money supply, which in SolarCoin
- * currently happens to be less than 98,100,000,000 SLR for various reasons, but
+ * currently happens to be less than 98,100,000,000 SSF for various reasons, but
  * rather a sanity check. As this sanity check is used by consensus-critical
  * validation code, the exact value of the MAX_MONEY constant is consensus
  * critical; in unusual circumstances like a(nother) overflow bug that allowed
